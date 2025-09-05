@@ -5,7 +5,7 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { HiVideoCamera, HiCollection } from "react-icons/hi";
 
-const API_BASE_URL = import.meta.env.VITE_API_URL;
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 function App() {
   const [recordings, setRecordings] = useState([]);
